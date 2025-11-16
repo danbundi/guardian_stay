@@ -83,25 +83,25 @@ const Header = () => {
   }
 
   return (
-    <header ref={headerRef} className="bg-gray-300 backdrop-blur-md shadow-sm m-[25px] rounded-4xl">
-      <div className="container mx-auto px-6 py-4">
+    <header ref={headerRef} className="bg-gray-300 backdrop-blur-md shadow-sm m-4 lg:m-[25px] rounded-3xl lg:rounded-4xl">
+      <div className="container mx-auto px-4 lg:px-6 py-3 lg:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 lg:space-x-3">
             <img 
               ref={logoRef}
               src={logo} 
-              className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              className="w-8 h-8 lg:w-10 lg:h-10 bg-blue-900 rounded-full flex items-center justify-center"
               alt="GuardianStay Logo"
             />
-            <span className="text-xl font-bold text-blue-900">GuardianStay</span>
+            <span className="text-lg lg:text-xl font-bold text-blue-900">GuardianStay</span>
           </div>
 
           {/* Call to Action Button */}
           <button 
             ref={buttonRef}
             onClick={handleContactClick}
-            className="bg-amber-500 text-white px-6 py-3 rounded-3xl font-semibold hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 shadow-md"
+            className="bg-amber-500 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-2xl lg:rounded-3xl font-semibold hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 shadow-md text-sm lg:text-base"
           >
             Contact Us
           </button>
